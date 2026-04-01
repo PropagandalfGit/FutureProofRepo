@@ -1,12 +1,9 @@
 package com.better;
 
-import com.better.PaymentClasses.LoggingPaymentMethod;
-import com.better.PaymentClasses.PaymentMethodRegistry;
-import com.better.PaymentClasses.PaymentMethods.CreditCardPayment;
-import com.better.PaymentClasses.PaymentMethods.CryptoPayment;
-import com.better.PaymentClasses.PaymentMethods.PayPalPayment;
-import com.better.PaymentClasses.PaymentProcessor;
-import com.better.PaymentClasses.PaymentResults.PaymentResult;
+import com.better.decorator.LoggingPaymentMethod;
+import com.better.methods.CreditCardPayment;
+import com.better.methods.CryptoPayment;
+import com.better.methods.PayPalPayment;
 
 public class App {
     public static void main(String[] args) {

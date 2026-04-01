@@ -1,7 +1,7 @@
-package com.better.PaymentClasses;
+package com.better.decorator;
 
-import com.better.PaymentClasses.PaymentInterfaces.PaymentMethod;
-import com.better.PaymentClasses.PaymentResults.PaymentResult;
+import com.better.PaymentMethod;
+import com.better.PaymentResult;
 
 public class LoggingPaymentMethod implements PaymentMethod {
 

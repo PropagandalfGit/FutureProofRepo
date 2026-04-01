@@ -1,4 +1,4 @@
-package com.better.PaymentClasses.PaymentResults;
+package com.better;
 
 public class PaymentResult {
     private final boolean success;

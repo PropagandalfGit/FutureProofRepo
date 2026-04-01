@@ -1,9 +1,9 @@
-package com.better.PaymentClasses.PaymentMethods;
+package com.better.methods;
 
-import com.better.PaymentClasses.PaymentInterfaces.PaymentMethod;
-import com.better.PaymentClasses.PaymentResults.PaymentResult;
+import com.better.PaymentMethod;
+import com.better.PaymentResult;
 
-public class CryptoPayment implements PaymentMethod {
+public class CreditCardPayment implements PaymentMethod {
 
     @Override
     public boolean validate(double amount) {

@@ -1,10 +1,8 @@
-package com.better.PaymentClasses;
+package com.better;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
-
-import com.better.PaymentClasses.PaymentInterfaces.PaymentMethod;
 
 public class PaymentMethodRegistry {
     private final Map<String, PaymentMethod> methods = new HashMap<>();

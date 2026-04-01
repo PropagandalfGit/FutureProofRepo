@@ -1,6 +1,4 @@
-package com.better.PaymentClasses.PaymentInterfaces;
-
-import com.better.PaymentClasses.PaymentResults.PaymentResult;
+package com.better;
 
 public interface PaymentMethod {
     PaymentResult process(double amount);

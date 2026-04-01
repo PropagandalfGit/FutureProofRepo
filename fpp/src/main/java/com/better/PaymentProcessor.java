@@ -1,6 +1,4 @@
-package com.better.PaymentClasses;
-
-import com.better.PaymentClasses.PaymentResults.PaymentResult;
+package com.better;
 
 public class PaymentProcessor {
 
