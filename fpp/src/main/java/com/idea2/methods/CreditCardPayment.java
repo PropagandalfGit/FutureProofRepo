@@ -12,7 +12,7 @@ public class CreditCardPayment implements PaymentMethod {
 
     @Override
     public double calculateFee(double amount) {
-        return (amount * 0.029) + 0.30;  // Stripe-style: 2.9% + $0.30
+        return (amount * 0.029) + 0.30;  // stripe rate
     }
 
     @Override

@@ -7,7 +7,7 @@ public class PaymentResult {
     private final double feeCharged;
     private final String message;
 
-    // Private constructor: Use factory methods
+    // private constructor: use factory methods
     private PaymentResult(boolean success, String transactionId,
                           double amount, double fee, String message) {
         this.success = success;
