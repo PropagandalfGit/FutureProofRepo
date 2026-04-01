@@ -7,25 +7,25 @@ public class PayPalPayment implements PaymentMethod {
 
     @Override
     public boolean validate(double amount) {
-        return amount > 0 && amount <= 50_000;  // typical card limit
+        return amount > 0 && amount <= 10_000;
     }
 
     @Override
     public double calculateFee(double amount) {
-        return (amount * 0.029) + 0.30;  // Stripe-style: 2.9% + $0.30
+        return (amount * 0.0349) + 0.49;  // PayPal standard rate
     }
 
     @Override
     public PaymentResult process(double amount) {
         if (!validate(amount)) {
-            return PaymentResult.failure("Amount invalid for credit card: $" + amount);
+            return PaymentResult.failure("Amount invalid for PayPal: $" + amount);
         }
         double fee = calculateFee(amount);
-        String txId = "CC-" + System.currentTimeMillis();
-        System.out.printf("Credit card charged: $%.2f (fee: $%.2f)%n", amount, fee);
+        String txId = "PP-" + System.currentTimeMillis();
+        System.out.printf("PayPal charged: $%.2f (fee: $%.2f)%n", amount, fee);
         return PaymentResult.success(txId, amount, fee);
     }
 
     @Override
-    public String getMethodName() { return "credit_card"; }
+    public String getMethodName() { return "paypal"; }
 }
