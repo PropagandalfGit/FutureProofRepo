@@ -17,6 +17,6 @@ public class App
         processor.processPayment("credit_card", -50.00);
 
         // Typo in method name. Silently falls into the else branch.
-        processor.processPayment("crypto", 200.00);
+        processor.processPayment("cryto", 200.00);
     }
 }

@@ -27,19 +27,6 @@ public class PaymentProcessor {
             System.out.printf("Processing PayPal: $%.2f (fee: $%.2f)%n", amount, fee);
             System.out.println("[LOG] PayPal payment successful");
 
-        } else if (method.equals("venmo")) {
-            if (amount <= 0 || amount > 5000) {
-                System.out.println("Invalid Venmo amount: " + amount);
-                return;
-            }
-
-            double fee = amount * 0.03;
-
-            System.out.println("[LOG] Attempting Venmo payment of $" + amount);
-
-            System.out.printf("Processing Venmo: $%.2f (fee: $%.2f)%n", amount, fee);
-            System.out.println("[LOG] Venmo payment successful");
-
         } else if (method.equals("crypto")) {
             if (amount < 1.0) {
                 System.out.println("Minimum crypto payment is $1.00");

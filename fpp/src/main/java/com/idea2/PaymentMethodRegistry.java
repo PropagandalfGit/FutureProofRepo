@@ -1,4 +1,4 @@
-package com.better;
+package com.idea2;
 
 import java.util.HashMap;
 import java.util.Map;
