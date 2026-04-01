@@ -1,4 +1,4 @@
-package com.bad;
+package com.idea1;
 
 /**
  * Hello world!
@@ -18,9 +18,5 @@ public class App
 
         // Typo in method name. Silently falls into the else branch.
         processor.processPayment("crypto", 200.00);
-
-        // Now the PM says: "add Apple Pay by Friday"
-        // You open this file, scroll to the bottom of the else-if chain,
-        // paste a new block, and pray you didn't break credit cards.
     }
 }

@@ -1,7 +1,7 @@
-package com.better.methods;
+package com.idea2.methods;
 
-import com.better.PaymentMethod;
-import com.better.PaymentResult;
+import com.idea2.PaymentMethod;
+import com.idea2.PaymentResult;
 
 public class CreditCardPayment implements PaymentMethod {
 

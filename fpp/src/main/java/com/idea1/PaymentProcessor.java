@@ -1,4 +1,4 @@
-package com.bad;
+package com.idea1;
 
 public class PaymentProcessor {
     public void processPayment(String method, double amount) {

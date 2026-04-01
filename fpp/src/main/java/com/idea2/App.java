@@ -1,9 +1,7 @@
-package com.better;
+package com.idea2;
 
-import com.better.decorator.LoggingPaymentMethod;
-import com.better.methods.CreditCardPayment;
-import com.better.methods.CryptoPayment;
-import com.better.methods.PayPalPayment;
+import com.idea2.decorator.LoggingPaymentMethod;
+import com.idea2.methods.*;
 
 public class App {
     public static void main(String[] args) {

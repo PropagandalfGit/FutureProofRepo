@@ -1,4 +1,4 @@
-package com.better;
+package com.idea2;
 
 public class PaymentProcessor {
 
