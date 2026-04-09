@@ -1,4 +1,4 @@
-package com.idea1;
+package com;
 
 /**
  * Hello world!

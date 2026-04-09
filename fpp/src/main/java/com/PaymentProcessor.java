@@ -1,9 +1,9 @@
-package com.idea1;
+package com;
 
 public class PaymentProcessor {
     public void processPayment(String method, double amount) {
         if (method.equals("credit_card")) {
-            if (amount <= 0 || amount > 50000) {
+            if (amount < 0 || amount > 50000) {
                 System.out.println("Invalid credit card amount: " + amount);
                 return;
             }
@@ -13,9 +13,8 @@ public class PaymentProcessor {
 
             System.out.printf("Processing credit card: $%.2f (fee: $%.2f)%n", amount, fee);
             System.out.println("[LOG] Credit card payment successful");
-
         } else if (method.equals("paypal")) {
-            if (amount <= 0 || amount > 10000) {
+            if (amount < 0 || amount > 10000) {
                 System.out.println("Invalid PayPal amount: " + amount);
                 return;
             }
@@ -26,7 +25,6 @@ public class PaymentProcessor {
 
             System.out.printf("Processing PayPal: $%.2f (fee: $%.2f)%n", amount, fee);
             System.out.println("[LOG] PayPal payment successful");
-
         } else if (method.equals("crypto")) {
             if (amount < 1.0) {
                 System.out.println("Minimum crypto payment is $1.00");
